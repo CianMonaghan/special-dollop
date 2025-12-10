@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MongoDB Database Viewer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+    <h1>Race Select</h1>
+    <form id="race_input" action="/submit-form" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" value="Human"><br>
+        <label for="size">Size</label><br>
+        <select name="size" id="size">
+            <option value="tiny">Tiny</option>
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+            <option value="huge">Huge</option>
+            <option value="garguantan">Garguantan</option>
+        </select><br>
+        <label for="speed">Speed</label><br>
+        <input type="number" id="speed" name="speed" value="30" step="5" min="0"><br>
+        <label for="ASI_full">Ability Score Increases</label><br>
+            <label for="Str">Strength</label>
+            <input type="number" id="Str" name="Str" value="1"><br>
+            <label for="Dex">Dexterity</label>
+            <input type="number" id="Dex" name="Dex" value="1"><br>
+            <label for="Con">Constitution</label>
+            <input type="number" id="Con" name="Con" value="1"><br>
+            <label for="Int">Intelligence</label>
+            <input type="number" id="Int" name="Int" value="1"><br>
+            <label for="Wis">Wisdom</label>
+            <input type="number" id="Wis" name="Wis" value="1"><br>
+            <label for="Cha">Charisma</label>
+            <input type="number" id="Cha" name="Cha" value="1"><br>
+        <label for="traits">Traits</label><br>
+        <textarea id="traits" name="traits" rows="5" cols="40">Languages. You can speak Common and one other language of your choice.</textarea><br>
+        <button type="submit">Save</button>
+        <button type="upload">Upload</button>
+    </form>
+    
+</body>
+</html>

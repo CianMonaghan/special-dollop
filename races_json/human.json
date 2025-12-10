@@ -1,0 +1,12 @@
+{
+    "name": "human",
+    "size": "Medium",
+    "speed": 30,
+    "Str": 1,
+    "Dex": 1,
+    "Con": 1,
+    "Int": 1,
+    "Wis": 1,
+    "Cha": 1,
+    "traits": "Languages. You can speak Common and one other language of your choice."
+}
