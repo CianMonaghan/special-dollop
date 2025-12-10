@@ -1,0 +1,12 @@
+{
+    "name": "Halfling",
+    "size": "Small",
+    "speed": 25,
+    "Str": 0,
+    "Dex": 2,
+    "Con": 1,
+    "Int": 0,
+    "Wis": 0,
+    "Cha": 0,
+    "traits": "Stout Resilience. You have advantage on saving throws against poison, and you have resistance to poison damage. \nLanguages. You can speak Common and Halfling."
+}

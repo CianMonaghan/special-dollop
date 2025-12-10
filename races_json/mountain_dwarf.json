@@ -1,0 +1,12 @@
+{
+    "name": "Mountain Dwarf",
+    "size": "Medium",
+    "speed": 25,
+    "Str": 2,
+    "Dex": 0,
+    "Con": 2,
+    "Int": 0,
+    "Wis": 0,
+    "Cha": 0,
+    "traits": "Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.\nLanguages. You can speak Common and Dwarvish."
+}

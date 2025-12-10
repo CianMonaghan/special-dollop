@@ -1,0 +1,12 @@
+{
+    "name": "Wood Elf",
+    "size": "Medium",
+    "speed": 35,
+    "Str": 0,
+    "Dex": 2,
+    "Con": 0,
+    "Int": 0,
+    "Wis": 1,
+    "Cha": 0,
+    "traits": "Darkvision. You have darkvision out to 60ft. \nLanguages. You can speak Common and one other language of your choice."
+}

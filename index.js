@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
-
+const FormData = require('form-data');
 
 // To connect with your MongoDB database
 const mongoose = require('mongoose');
@@ -48,20 +48,26 @@ app.get('/', async (req, res) => {
 app.post('/new', async (req, res) => {
     try {
         //const form = document.getElementById("race_input");
-        //const race = new FormData({
-          //form
-          // name: req.body.name,
-          // size: req.body.size,
-          // speed: req.body.speed,
-          // Str: req.body.Str,
-          // Dex: req.body.Dex,
-          // Con: req.body.Con,
-          // Int: req.body.Int,
-          // Wis: req.body.Wis,
-          // Cha: req.body.Cha,
-          // traits: req.body.traits
-        //});
-        await race.save();
+        const race = new FormData({
+          name: req.body.name,
+          size: req.body.size,
+          speed: req.body.speed,
+          Str: req.body.Str,
+          Dex: req.body.Dex,
+          Con: req.body.Con,
+          Int: req.body.Int,
+          Wis: req.body.Wis,
+          Cha: req.body.Cha,
+          traits: req.body.traits
+        });
+        await race.save(function(err,result){
+            if (err){
+                console.log(err);
+            }
+            else{
+                console.log(result)
+            }
+        });
         console.log("Data saved.")
         res.redirect("/");
     } catch (err) {
